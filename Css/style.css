@@ -9,6 +9,11 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: yellow;
+}
 .bottom-line {
   height: 2px;
   width: 3rem;
@@ -44,7 +49,8 @@ ul {
   padding: 0 20px;
 }
 
-#logo {
+.logo {
+  text-decoration: none;
   font-size: 3rem;
   font-weight: bold;
   color: #f4f4f4;
@@ -56,17 +62,7 @@ ul {
 
 #main-nav ul li {
   padding: 0 10px;
-}
-
-#main-nav ul li a {
   text-decoration: none;
-  font-size: 25px;
-  color: yellow;
-}
-#main-nav ul li a:hover {
-  font-weight: bold;
-  font-size: 30px;
-  color: skyblue;
 }
 
 #header-content {
@@ -91,6 +87,9 @@ ul {
   background: url(../img/home.jpg) no-repeat 20% 30% / cover;
 }
 /* Section A */
+.home-section-a {
+  padding: 20px 10px;
+}
 .home-section-a .specials {
   margin-top: 1rem;
   display: grid;
@@ -109,6 +108,7 @@ ul {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 10px 5px;
 }
 
 .container {
@@ -130,12 +130,15 @@ ul {
   color: #f4f4f4;
   border-radius: 50%;
   padding: 2rem;
-  line-height: 5px;
+  line-height: 10px;
   position: relative;
   font-size: 2rem;
+  transition: all 1s;
 }
 
 .specials .process-step {
+  display: flex;
+  justify-content: center;
   position: absolute;
   top: 0;
   right: 0;
@@ -148,8 +151,20 @@ ul {
   line-height: 5px;
   padding: 1rem;
   align-items: center;
+  transition: all 1s;
 }
 
+.process-icon:hover {
+  background: skyblue;
+  color: #333;
+  font-size: 3rem;
+  line-height: 20px;
+}
+
+.process-step:hover {
+  background: #333;
+  color: #f4f4f4;
+}
 /* About:Secton A */
 #about-a {
   padding: 2rem 2rem;
@@ -235,6 +250,7 @@ img {
 #about-d .testimonials ul li {
   font-weight: bold;
   font-size: 15px;
+  padding: 0 5px;
 }
 
 .testimonials img {
@@ -339,15 +355,16 @@ img {
 }
 
 .footer-container a {
-  border-radius: 2px solid #f4f4f4;
   background: #f4f4f4;
   color: #333;
   border-radius: 50%;
   padding: 10px 10px;
   margin: 0 10px;
+  transition: all 1s;
 }
 
 .footer-container a:hover {
   background: yellow;
   color: #333;
+  font-size: 2rem;
 }
