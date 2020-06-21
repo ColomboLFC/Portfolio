@@ -1,78 +1,95 @@
+/* Smartphone */
+/* Home */
 @media (max-width: 500px) {
-  /* Home */
-  #header-home,
-  #header-inner {
-    height: 10rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: 3px solid yellow;
-    background-position: 20% 30%;
+  #header-home .container {
+    height: auto;
   }
+
   #main-nav {
-    padding-top: 1rem;
     flex-direction: column;
-    align-items: center;
   }
-  .header-content {
-    display: none;
+
+  .container h1 {
+    font-size: 20px;
+    padding-top: 20px;
   }
-  .home-section-a .specials {
-    display: block;
-    padding: 10px 10px;
-  }
-  .home-section-b .specials {
-    display: block;
-    padding: 20px 10px;
-  }
-  .specials div {
+
+  .container p {
+    font-size: 18px;
     padding: 10px;
   }
-  /* Footer */
-  .footer-container {
+
+  .specials {
     flex-direction: column;
-    font-size: 17px;
-    padding: 1rem;
   }
+
+  .specials div {
+    padding-bottom: 10px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+  }
+
   .footer-container .social {
-    padding-top: 10px;
+    padding: 10px 0;
   }
   /* About */
-  #about-a .about-info {
-    grid-template-areas:
-      "bioimage"
-      "bio"
-      "bio"
-      "aw1"
-      "aw2"
-      "aw3";
+
+  .about-info {
+    display: flex;
+    flex-direction: column;
   }
+
   #about-c {
     display: none;
   }
+
   #about-d .testimonials {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
+
   /* Contact */
   .contact-a .text-form {
-    grid-template-areas:
-      "name"
-      "subject"
-      "email"
-      "phone"
-      "message";
+    display: flex;
+    flex-direction: column;
+    margin: 0;
   }
-  .contact-b .contact-info {
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
   }
-  .contact-c .section-title-1 {
-    font-size: 46px;
+
+  .contact-info div {
+    padding: 10px 0;
   }
 }
 
-@media (max-width: 1024px) {
-  .contact-c .section-title-1 {
-    font-size: 46px;
+/* Tablet  */
+@media (max-width: 812px) {
+  #header-home .container {
+    height: 60vh;
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+  }
+
+  .container h1 {
+    font-size: 30px;
+    padding: 0;
+  }
+
+  #about-d .testimonials {
+    display: flex;
+    flex-direction: column;
   }
 }
